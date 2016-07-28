@@ -172,3 +172,10 @@ li.modifications {
 		width: auto;
 	}
 }
+
+@media screen and (max-width: 350px) {
+	.profilePicture_block {
+		width: 50%;
+		margin: 0 0 5% 25%;
+	}
+}
