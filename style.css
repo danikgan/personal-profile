@@ -1,0 +1,132 @@
+body {
+	background-color: rgba(222, 245, 250, 0.8);
+	padding: 1%;
+}
+
+a:link { color: rgba(238, 46, 100, 1); text-decoration: none; }
+a:visited { color: green; text-decoration: none; }
+a:hover { color: hotpink; text-decoration: underline; }
+a:active { color: green; text-decoration: underline; }
+
+
+/*----------------------------------- Main Page -----------------------------------*/
+
+
+/*---- Block of Profile Picture ----*/
+.profilePicture_block {
+	width: 15%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#profilePicture {
+	width: 100%;
+    z-index: 1;
+    box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
+}
+
+#profileName {
+	margin-top: 10%;
+	font-size: 150%;
+	
+    z-index: 1;
+}
+
+.littlePhrase {
+	margin-top: 3%;
+	
+	font-style: oblique;
+	font-size: 90%;
+}
+
+
+
+/*---- Blocks of Info ----*/
+.personalInfo_block {
+	display: inline-block;
+	vertical-align: top;
+	
+	width: 45%;
+}
+
+.personalInfo {
+	z-index: 1;
+	padding: 3%;
+	margin: 0 5% 2% 5%;
+	
+	border-radius: 5px;
+	background-color: rgba(161, 220, 251, 0.5);
+	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
+}
+
+.personalInfo.colourExtended {
+	background-color: rgba(144, 255, 233, 0.5);
+}
+
+.header_of_blocks {
+	padding: 0 0 3% 0;
+	font-size: 110%;
+}
+
+.personalInfo_table {
+	width: 100%;
+}
+
+table, th, td {
+	padding: 2%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td.main {
+	width: 35%;
+}
+
+
+
+/*---- Block of Summary Statement ----*/
+.summary_block {
+	z-index: 1;
+	display: inline-block;
+	vertical-align: top;
+	
+	margin: 0 0 0 0;
+	padding: 2%;
+	width: 35%;
+	
+	border-radius: 5px;
+	background-color: rgba(161, 220, 251, 0.5);
+	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
+}
+
+
+
+/*---- Menu ----*/
+.menu {
+	background-color: white;
+	border-radius: 5px;
+	
+	margin: 2% 0 0 0;
+	padding: 1%;
+	
+	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
+}
+
+.menu.modifications {
+	width: 15%;
+}
+
+ul.noMargin {
+	margin: 0 0 0 -8%;
+}
+
+li.modifications {
+	padding-left: 3%;
+}
+
+/*----------------------------------- Overrides -----------------------------------*/
+@media screen and (max-width: 800px) {
+	#profilePicture {
+		/*width: 25%;*/
+	}
+}
