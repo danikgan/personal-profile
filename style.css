@@ -55,12 +55,12 @@ a:active { color: green; text-decoration: underline; }
 	margin: 0 5% 2% 5%;
 	
 	border-radius: 5px;
-	background-color: rgba(161, 220, 251, 0.5);
+	background-color: rgba(161, 220, 251, 0.4);
 	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 }
 
 .personalInfo.colourExtended {
-	background-color: rgba(144, 255, 233, 0.5);
+	background-color: rgba(144, 255, 233, 0.4);
 }
 
 .header_of_blocks {
@@ -95,7 +95,7 @@ td.main {
 	width: 35%;
 	
 	border-radius: 5px;
-	background-color: rgba(161, 220, 251, 0.5);
+	background-color: rgba(161, 220, 251, 0.4);
 	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 }
 
@@ -125,8 +125,50 @@ li.modifications {
 }
 
 /*----------------------------------- Overrides -----------------------------------*/
-@media screen and (max-width: 800px) {
-	#profilePicture {
-		/*width: 25%;*/
+@media screen and (max-width: 1150px) {
+	.menu.modifications {
+		width: 30%;
+	}
+	
+	ul.noMargin {
+		margin: 0 0 0 0;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.profilePicture_block {
+		width: 25%;
+	}
+	
+	.personalInfo_block {
+		width: 74%;
+	}
+	
+	.summary_block {
+		width: auto;
+	}
+	.menu {
+		padding: 3%;
+	}
+	.menu.modifications {
+		width: 50%;
+	}
+	
+	ul.noMargin {
+		margin: 0 0 0 0;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.profilePicture_block {
+		width: 33%;
+		margin: 0 0 5% 33%;
+	}
+	.personalInfo_block {
+		width: auto;
+		margin: auto;
+	}
+	.menu.modifications {
+		width: auto;
 	}
 }
