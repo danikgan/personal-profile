@@ -1,8 +1,8 @@
 body {
 	background-color: rgba(0, 255, 255, 0.05);
 	padding: 1%;
-	font-family: 'Playfair Display', serif;
-	font-size: 90%;
+	font-family: 'Merriweather', serif;
+	font-size: 80%;
 }
 
 .backgroundPicture {
@@ -99,8 +99,9 @@ a:active { color: green; text-decoration: underline; }
 }
 
 .header_of_blocks {
+	text-decoration: underline;
 	padding: 0 0 3% 0;
-	font-size: 110%;
+	font-size: 125%;
 }
 
 .personalInfo_table {
@@ -141,7 +142,7 @@ td.main { width: 35%; }
 	padding: 1%;
 	
 	border-style: hidden solid solid solid;
-	border-radius: 10px;
+	border-radius: 0px 0px 10px 10px;
 	background-color: white;
 	//box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 }
