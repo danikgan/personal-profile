@@ -1,6 +1,20 @@
 body {
-	background-color: rgba(222, 245, 250, 0.8);
+	background-color: rgba(0, 255, 255, 0.05);
 	padding: 1%;
+}
+
+.backgroundPicture {
+	background-image: url(/files/Enlight3.jpg);
+	background-size: 500px 3px; 
+	background-position: center center;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+	z-index: -1;
 }
 
 a:link { color: rgba(238, 46, 100, 1); text-decoration: none; }
@@ -14,15 +28,22 @@ a:active { color: green; text-decoration: underline; }
 
 /*---- Block of Profile Picture ----*/
 .profilePicture_block {
-	width: 15%;
 	display: inline-block;
 	vertical-align: top;
+	width: 15%;
+	
+	background-color: white;
+	border-radius: 10px;
+	//border-color: black;
+	//border-width: 5px;
+	padding: 1%;
+	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 }
 
 #profilePicture {
 	width: 100%;
     z-index: 1;
-    box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
+    //box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 }
 
 #profileName {
@@ -46,21 +67,23 @@ a:active { color: green; text-decoration: underline; }
 	display: inline-block;
 	vertical-align: top;
 	
-	width: 45%;
+	width: 43%;
 }
 
 .personalInfo {
 	z-index: 1;
 	padding: 3%;
-	margin: 0 5% 2% 5%;
+	margin: 0 10px 10px 25px;
 	
-	border-radius: 5px;
-	background-color: rgba(161, 220, 251, 0.4);
+	border-radius: 10px;
+	//background-color: rgba(161, 220, 251, 11);
+	background-color: white;
 	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 }
 
 .personalInfo.colourExtended {
-	background-color: rgba(144, 255, 233, 0.4);
+	//background-color: rgba(144, 255, 233, 1);
+	background-color: white;
 }
 
 .header_of_blocks {
@@ -73,7 +96,7 @@ a:active { color: green; text-decoration: underline; }
 }
 
 table, th, td {
-	padding: 2%;
+	padding: 1% 1% 1% 2%;
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -94,8 +117,9 @@ td.main {
 	padding: 2%;
 	width: 35%;
 	
-	border-radius: 5px;
-	background-color: rgba(161, 220, 251, 0.4);
+	border-radius: 10px;
+	//background-color: rgba(161, 220, 251, 1);
+	background-color: white;
 	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 }
 
@@ -103,21 +127,22 @@ td.main {
 
 /*---- Menu ----*/
 .menu {
-	background-color: white;
-	border-radius: 5px;
+	//background-color: white;
+	//border-radius: 10px;
 	
-	margin: 2% 0 0 0;
-	padding: 1%;
+	//margin: 1% 0 0 0;
+	margin: 15px 0 0 0;
+	//padding: 1%;
 	
-	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
+	//box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 }
 
 .menu.modifications {
-	width: 15%;
+	//width: 15%;
 }
 
 ul.noMargin {
-	margin: 0 0 0 -8%;
+	margin: 5px 0 0 -8%;
 }
 
 li.modifications {
