@@ -1,11 +1,13 @@
 body {
 	background-color: rgba(0, 255, 255, 0.05);
 	padding: 1%;
+	font-family: 'Playfair Display', serif;
+	font-size: 90%;
 }
 
 .backgroundPicture {
-	background-image: url(/files/Enlight3.jpg);
-	background-size: 500px 3px; 
+	background-image: url(files/Enlight3.jpg);
+	background-size: 1000px 1px; 
 	background-position: center center;
 	
 	position: fixed;
@@ -25,25 +27,33 @@ a:active { color: green; text-decoration: underline; }
 
 /*----------------------------------- Main Page -----------------------------------*/
 
+.row {
+	z-index: 1;
+	display: flex; /* equal height of the children */
+	width: 82%;
+	margin-left: 18%;
+}
+
+.col { flex: 1; /* additionally, equal width */ }
+
 
 /*---- Block of Profile Picture ----*/
 .profilePicture_block {
-	display: inline-block;
+	z-index: 2;
+	position: absolute;
 	vertical-align: top;
 	width: 15%;
 	
+	border-style: solid solid hidden solid;
 	background-color: white;
-	border-radius: 10px;
-	//border-color: black;
-	//border-width: 5px;
+	border-radius: 10px 10px 0px 0px;
 	padding: 1%;
-	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
+	//box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 }
 
 #profilePicture {
 	width: 100%;
     z-index: 1;
-    //box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 }
 
 #profileName {
@@ -67,22 +77,24 @@ a:active { color: green; text-decoration: underline; }
 	display: inline-block;
 	vertical-align: top;
 	
-	width: 43%;
+	width: 65%;
 }
 
 .personalInfo {
 	z-index: 1;
 	padding: 3%;
-	margin: 0 10px 10px 25px;
+	margin: 0 10px 0 25px;
 	
+	border: solid;
 	border-radius: 10px;
-	//background-color: rgba(161, 220, 251, 11);
+	/*background-color: rgba(161, 220, 251, 11);*/
 	background-color: white;
-	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
+	//box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 }
 
 .personalInfo.colourExtended {
-	//background-color: rgba(144, 255, 233, 1);
+	margin-top: 10px;
+	/*background-color: rgba(144, 255, 233, 1);*/
 	background-color: white;
 }
 
@@ -101,9 +113,7 @@ table, th, td {
     border-collapse: collapse;
 }
 
-td.main {
-	width: 35%;
-}
+td.main { width: 35%; }
 
 
 
@@ -113,32 +123,27 @@ td.main {
 	display: inline-block;
 	vertical-align: top;
 	
-	margin: 0 0 0 0;
-	padding: 2%;
-	width: 35%;
+	padding: 3%;
 	
+	border: solid;
 	border-radius: 10px;
-	//background-color: rgba(161, 220, 251, 1);
 	background-color: white;
-	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
+	//box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 }
 
 
 
 /*---- Menu ----*/
 .menu {
-	//background-color: white;
-	//border-radius: 10px;
+	position: fixed;
+	z-index: 1;
+	width: 15%;
+	padding: 1%;
 	
-	//margin: 1% 0 0 0;
-	margin: 15px 0 0 0;
-	//padding: 1%;
-	
+	border-style: hidden solid solid solid;
+	border-radius: 10px;
+	background-color: white;
 	//box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
-}
-
-.menu.modifications {
-	//width: 15%;
 }
 
 ul.noMargin {
@@ -150,57 +155,10 @@ li.modifications {
 }
 
 /*----------------------------------- Overrides -----------------------------------*/
-@media screen and (max-width: 1150px) {
-	.menu.modifications {
-		width: 30%;
-	}
-	
-	ul.noMargin {
-		margin: 0 0 0 0;
-	}
-}
+@media screen and (max-width: 1150px) {}
 
-@media screen and (max-width: 850px) {
-	.profilePicture_block {
-		width: 25%;
-	}
-	
-	.personalInfo_block {
-		width: 74%;
-	}
-	
-	.summary_block {
-		width: auto;
-	}
-	.menu {
-		padding: 3%;
-	}
-	.menu.modifications {
-		width: 50%;
-	}
-	
-	ul.noMargin {
-		margin: 0 0 0 0;
-	}
-}
+@media screen and (max-width: 850px) {}
 
-@media screen and (max-width: 550px) {
-	.profilePicture_block {
-		width: 33%;
-		margin: 0 0 5% 33%;
-	}
-	.personalInfo_block {
-		width: auto;
-		margin: auto;
-	}
-	.menu.modifications {
-		width: auto;
-	}
-}
+@media screen and (max-width: 550px) {}
 
-@media screen and (max-width: 350px) {
-	.profilePicture_block {
-		width: 50%;
-		margin: 0 0 5% 25%;
-	}
-}
+@media screen and (max-width: 350px) {}
