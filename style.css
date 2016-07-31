@@ -180,6 +180,14 @@ li.modifications {
 	margin-left: -1%;
 }
 
+.colourExplanation {
+	font-size: 90%;
+	display: inline-block;
+	padding: 2%;
+	margin-top: 3%;
+	background-color: rgba(127, 127, 127, 0.1);
+}
+
 .yearsonEducation {
 	width: auto;
 	margin-top: 0;
