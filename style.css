@@ -4,6 +4,7 @@ body {
 	font-family: 'News Cycle', sans-serif;
 	font-size: 95%;
 	min-width: 800px;
+	cursor: default;
 }
 
 .backgroundPicture {
