@@ -9,7 +9,7 @@ body {
 
 .backgroundPicture {
 	background-image: url(files/Enlight3.jpg);
-	background-size: 1000px 500px; 
+	background-size: 500px 250px; 
 	background-position: center center;
 	
 	position: fixed;
