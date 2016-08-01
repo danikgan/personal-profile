@@ -146,6 +146,7 @@ ul.noMargin {
 }
 
 li.modifications {
+	cursor: pointer;
 	padding-left: 3%;
 	margin: -3px 0 0 0;
 }
@@ -164,6 +165,12 @@ li.modifications {
 
 .hidden {
 	display: none;
+}
+
+.header {
+	color: gray;
+	font-size: large;
+	margin: 0 0 3% 0;
 }
 
 
