@@ -54,6 +54,7 @@ a:active { color: green; text-decoration: underline; }
 #profilePicture {
 	width: 80%;
     z-index: 2;
+    border: 1px dashed;
 }
 
 #profileName {
