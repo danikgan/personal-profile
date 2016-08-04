@@ -5,9 +5,11 @@ $('document').ready(function(){
 		
 		if(colorEducation == true) {
 			$('.toggleEducation').css("color", "green");
+			$('.toggleEducation').html('Education <sup>(active)</sup>');
 			colorEducation = false;
 		} else {
 			$('.toggleEducation').css("color", "rgba(238, 46, 100, 1)");
+			$('.toggleEducation').html('Education');
 			colorEducation = true;
 		}
 	});
@@ -18,9 +20,11 @@ $('document').ready(function(){
 		
 		if(colorTechSkills == true) {
 			$('.toggleTechSkills').css("color", "green");
+			$('.toggleTechSkills').html('Technical Skills <sup>(active)</sup>');
 			colorTechSkills = false;
 		} else {
 			$('.toggleTechSkills').css("color", "rgba(238, 46, 100, 1)");
+			$('.toggleTechSkills').html('Technical Skills');
 			colorTechSkills = true;
 		}
 	});
@@ -31,9 +35,11 @@ $('document').ready(function(){
 		
 		if(colorWorkExperience == true) {
 			$('.toggleWorkExperience').css("color", "green");
+			$('.toggleWorkExperience').html('Work Experience <sup>(active)</sup>');
 			colorWorkExperience = false;
 		} else {
 			$('.toggleWorkExperience').css("color", "rgba(238, 46, 100, 1)");
+			$('.toggleWorkExperience').html('Work Experience');
 			colorWorkExperience = true;
 		}
 	});
@@ -44,9 +50,11 @@ $('document').ready(function(){
 		
 		if(colorProjects == true) {
 			$('.toggleProjects').css("color", "green");
+			$('.toggleProjects').html('Projects <sup>(active)</sup>');
 			colorProjects = false;
 		} else {
 			$('.toggleProjects').css("color", "rgba(238, 46, 100, 1)");
+			$('.toggleProjects').html('Projects');
 			colorProjects = true;
 		}
 	});
@@ -57,9 +65,11 @@ $('document').ready(function(){
 		
 		if(colorCoverLetter == true) {
 			$('.toggleCoverLetter').css("color", "green");
+			$('.toggleCoverLetter').html('Cover Letter <sup>(active)</sup>');
 			colorCoverLetter = false;
 		} else {
 			$('.toggleCoverLetter').css("color", "rgba(238, 46, 100, 1)");
+			$('.toggleCoverLetter').html('Cover Letter');
 			colorCoverLetter = true;
 		}
 	});
@@ -70,9 +80,11 @@ $('document').ready(function(){
 		
 		if(colorPersonalStatement == true) {
 			$('.togglePersonalStatement').css("color", "green");
+			$('.togglePersonalStatement').html('Personal Statement <sup>(active)</sup>');
 			colorPersonalStatement = false;
 		} else {
 			$('.togglePersonalStatement').css("color", "rgba(238, 46, 100, 1)");
+			$('.togglePersonalStatement').html('Personal Statement');
 			colorPersonalStatement = true;
 		}
 	});
