@@ -21,8 +21,8 @@ body {
 	z-index: -1;
 }
 
-a:link { color: #0074ff; text-decoration: none; }
-a:visited { color: darkblue; text-decoration: none; }
+a:link { color: #0070ff; text-decoration: none; }
+a:visited { color: #000068; text-decoration: none; }
 a:hover { color: blue; text-decoration: underline; }
 a:active { color: blue; text-decoration: underline; }
 
