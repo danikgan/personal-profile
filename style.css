@@ -21,10 +21,10 @@ body {
 	z-index: -1;
 }
 
-a:link { color: rgba(238, 46, 100, 1); text-decoration: none; }
-a:visited { color: green; text-decoration: none; }
-a:hover { color: hotpink; text-decoration: underline; }
-a:active { color: green; text-decoration: underline; }
+a:link { color: #0074ff; text-decoration: none; }
+a:visited { color: blue; text-decoration: none; }
+a:hover { color: blue; text-decoration: underline; }
+a:active { color: blue; text-decoration: underline; }
 
 
 /*----------------------------------- Main Page -----------------------------------*/
