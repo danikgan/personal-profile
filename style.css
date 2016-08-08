@@ -8,9 +8,9 @@ body {
 }
 
 .backgroundPicture {
-	background-image: url(files/Enlight3.jpg);
-	background-size: 1000px 1px; 
-	background-position: center center;
+	//background-image: url(files/Enlight3.jpg);
+	//background-size: 1000px 1px; 
+	//background-position: center center;
 	
 	position: fixed;
 	top: 0;
@@ -24,7 +24,7 @@ body {
 a:link { color: #0070ff; text-decoration: none; }
 a:visited { color: #0070ff; text-decoration: none; }
 a:hover { color: blue; text-decoration: underline; }
-a:active { color: darkblue; text-decoration: underline; }
+a:active { color: blue; text-decoration: underline; }
 
 
 /*----------------------------------- Main Page -----------------------------------*/
