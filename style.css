@@ -147,6 +147,7 @@ td.main { width: 35%; }
 
 ul.noMargin {
 	margin: 5px 0 0 0;
+	list-style-type: circle;
 }
 
 li.modifications {
