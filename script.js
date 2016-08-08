@@ -5,7 +5,7 @@ $('document').ready(function(){
 		
 		if(colorEducation == true) {
 			$('.toggleEducation').css("color", "green");
-			$('.toggleEducation').html('Education <sup>(active)</sup>');
+			$('.toggleEducation').html('Education <img src="files/activeState.svg" class="activeState">');
 			colorEducation = false;
 		} else {
 			$('.toggleEducation').css("color", "rgba(238, 46, 100, 1)");
@@ -20,7 +20,7 @@ $('document').ready(function(){
 		
 		if(colorTechSkills == true) {
 			$('.toggleTechSkills').css("color", "green");
-			$('.toggleTechSkills').html('Technical Skills <sup>(active)</sup>');
+			$('.toggleTechSkills').html('Technical Skills <img src="files/activeState.svg" class="activeState">');
 			colorTechSkills = false;
 		} else {
 			$('.toggleTechSkills').css("color", "rgba(238, 46, 100, 1)");
@@ -35,7 +35,7 @@ $('document').ready(function(){
 		
 		if(colorWorkExperience == true) {
 			$('.toggleWorkExperience').css("color", "green");
-			$('.toggleWorkExperience').html('Work Experience <sup>(active)</sup>');
+			$('.toggleWorkExperience').html('Work Experience <img src="files/activeState.svg" class="activeState">');
 			colorWorkExperience = false;
 		} else {
 			$('.toggleWorkExperience').css("color", "rgba(238, 46, 100, 1)");
@@ -50,7 +50,7 @@ $('document').ready(function(){
 		
 		if(colorProjects == true) {
 			$('.toggleProjects').css("color", "green");
-			$('.toggleProjects').html('Projects <sup>(active)</sup>');
+			$('.toggleProjects').html('Projects <img src="files/activeState.svg" class="activeState">');
 			colorProjects = false;
 		} else {
 			$('.toggleProjects').css("color", "rgba(238, 46, 100, 1)");
@@ -65,7 +65,7 @@ $('document').ready(function(){
 		
 		if(colorCoverLetter == true) {
 			$('.toggleCoverLetter').css("color", "green");
-			$('.toggleCoverLetter').html('Cover Letter <sup>(active)</sup>');
+			$('.toggleCoverLetter').html('Cover Letter <img src="files/activeState.svg" class="activeState">');
 			colorCoverLetter = false;
 		} else {
 			$('.toggleCoverLetter').css("color", "rgba(238, 46, 100, 1)");
@@ -80,7 +80,7 @@ $('document').ready(function(){
 		
 		if(colorPersonalStatement == true) {
 			$('.togglePersonalStatement').css("color", "green");
-			$('.togglePersonalStatement').html('Personal Statement <sup>(active)</sup>');
+			$('.togglePersonalStatement').html('Personal Statement <img src="files/activeState.svg" class="activeState">');
 			colorPersonalStatement = false;
 		} else {
 			$('.togglePersonalStatement').css("color", "rgba(238, 46, 100, 1)");

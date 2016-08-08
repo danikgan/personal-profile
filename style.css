@@ -270,6 +270,13 @@ ul.noMarginTop {
 .togglePersonalStatement:hover { color: hotpink; text-decoration: underline; }
 .togglePersonalStatement:active { color: green; text-decoration: underline; }
 
+
+.activeState {
+	margin-left: 3px;
+	width: 5px;
+	vertical-align: 10%;
+}
+
 /*----------------------------------- Overrides -----------------------------------*/
 @media screen and (max-width: 1150px) {}
 
