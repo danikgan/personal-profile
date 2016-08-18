@@ -1,5 +1,10 @@
-.shadow {box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);}
+body {background: rgba(255,255,0,0.5);}
 
+.button {box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25); transition: 0.3s;}
+.button:hover {transform: scale(1.05);}
+.button:active {transform: scale(0.98) translate(0px, 3px);}
+
+.hidden {display: none;}
 
 .gradientCommon {
 	position: fixed;
@@ -49,12 +54,15 @@
 
 
 .img-circle {
-	margin: 50px 50px 10px 80px;
+	cursor: pointer;
+	
+	margin: 3% 3% 2% 5%;
 	padding: 10px;
     border-radius: 150px;
-    height: 200px;
+    height: 175px;
     
     background: white;
+    border: 2px solid yellow;
 }
 
 
@@ -65,10 +73,84 @@
 	
 	font-size: 25px;
 	
-	margin: 10px;
+	margin: 0 0 10px 10px;
 	width: 300px;
 	line-height: 125px;
     height: 125px;
 	
 	background: white;
+    border: 2px solid yellow;
+}
+
+
+/*----------------------------------- Content -----------------------------------*/
+
+.content {
+	position: fixed;
+	overflow-y: scroll;
+	body {overflow-y: hidden;}
+	z-index: 5;
+	
+	top: 50px;
+	bottom: 50px;
+	right: 50px;
+	left: 50px;
+	
+	padding: 3%;
+	
+	border-radius: 10px 10px 10px 10px;
+	background: white;
+	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
+	
+	
+	animation-name: appearance;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes appearance {
+	0% {
+		opacity: 0;
+		
+		top: 500px;
+		bottom: 500px;
+		right: 500px;
+		left: 500px;
+    }
+    100% {
+	    opacity: 1;
+	    
+		top: 50px;
+		bottom: 50px;
+		right: 50px;
+		left: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+	.content {
+		top: 15px;
+		bottom: 15px;
+		right: 15px;
+		left: 15px;
+	}
+	
+	@keyframes appearance {
+		0% {
+			opacity: 0;
+			
+			top: 150px;
+			bottom: 150px;
+			right: 150px;
+			left: 150px;
+	    }
+	    100% {
+		    opacity: 1;
+		    
+			top: 15px;
+			bottom: 15px;
+			right: 15px;
+			left: 15px;
+	    }
+	}
 }
