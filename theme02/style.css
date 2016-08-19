@@ -15,7 +15,6 @@ body {background: rgba(255,255,0,0.5);}
 	left: 42.5%;
 	background-color: white;
 	border-radius: 10px;
-	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
 	
 	animation-name: appearance_closeSection;
     animation-duration: .1s;
