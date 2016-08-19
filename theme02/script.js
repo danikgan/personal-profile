@@ -2,6 +2,7 @@ $('document').ready(function(){
 	/*----------------------------------- Loading -----------------------------------*/
     $(document).ajaxStart(function(){
         $("#wait").css("display", "block");
+        $( ".inside" ).html("Loading...");
     });
     $(document).ajaxComplete(function(){
         $("#wait").css("display", "none");
