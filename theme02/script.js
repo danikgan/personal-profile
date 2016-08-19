@@ -1,5 +1,14 @@
 $('document').ready(function(){
+	/*----------------------------------- Loading -----------------------------------*/
+    $(document).ajaxStart(function(){
+        $("#wait").css("display", "block");
+    });
+    $(document).ajaxComplete(function(){
+        $("#wait").css("display", "none");
+    });
 	
+	
+	/*----------------------------------- Content Loading -----------------------------------*/
 	$('.menEdu').click(function() {
 		$.ajaxSetup ({cache: false});
 		$( ".inside" ).load( "../content/content.html #education");
@@ -48,6 +57,7 @@ $('document').ready(function(){
 	});
 	
 	
+	/*----------------------------------- Simple Transition: when to be closed -----------------------------------*/
 	$('.transition').click(function() {
 		$('.featured').toggle();
 	});

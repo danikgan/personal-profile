@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 50 300 300">
+    <path d="M166.986 149.682c0 9.354-7.583 16.937-16.937 16.937-9.355 0-16.938-7.583-16.938-16.937 0-9.355 7.583-16.938 16.938-16.938 9.354 0 16.937 7.583 16.937 16.938zm-9.038-18.86l-1.795-.653 3.835-10.53 1.795.654zm5.84 3.846l-1.464-1.227 7.244-8.635 1.463 1.228zm3.368 3.94l9.76-5.635.955 1.654-9.76 5.635zm2.685 6.593l11.099-1.957.332 1.88-11.1 1.958zm.314 7l11.1 1.957-.332 1.881-11.1-1.956zm-1.954 6.73l9.76 5.635-.955 1.654-9.76-5.635zm-4.385 5.62l7.204 8.584-1.463 1.228-7.204-8.585zm-5.907 3.945l3.833 10.53-1.795.654-3.833-10.531zm-8.816 1.561h1.91v11.27h-1.91zm-6.912-1.676l1.796.653-3.853 10.592-1.795-.653zm-6.007-3.736l1.463 1.228-7.202 8.586-1.464-1.228zm-3.288-4.004l-9.76 5.635-.955-1.654 9.76-5.635zm-2.784-6.443l-11.036 1.946-.332-1.881 11.037-1.946zm-.275-7.144l-11.099-1.957.332-1.882 11.1 1.958zm2.251-6.722l-9.76-5.636.955-1.654 9.76 5.635zm4.044-5.62l-7.203-8.584 1.463-1.228 7.203 8.585zm6.008-3.773l-3.854-10.59 1.795-.654 3.854 10.591zm6.963-12.904h1.91v11.27h-1.91z" fill="#9bd872">
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 150 150" to="360 150 150" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M143.278 164.526c-2.601 0-5.002.733-7.003 1.934-3.001-4.735-8.27-7.937-14.272-7.937-7.403 0-13.672 4.736-15.94 11.471a11.505 11.505 0 0 0-4.001-.733 11.357 11.357 0 0 0-11.404 11.404 11.357 11.357 0 0 0 11.404 11.405h41.082c7.67 0 13.806-6.136 13.806-13.806.066-7.536-6.136-13.738-13.672-13.738z" fill="#57a32b">
+	    <animateTransform attributeName="transform" attributeType="XML" type="translate" values="15,0;-50,0;15,0" dur="17s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M198.794 170.708c-4.694 0-9.085 1.969-12.114 4.997-2.65-9.843-11.735-17.187-22.41-17.187-12.796 0-23.168 10.373-23.168 23.168 0 12.796 10.372 23.092 23.168 23.092h34.524c9.464 0 17.111-7.647 17.111-17.11 0-9.465-7.647-16.96-17.11-16.96z" fill="#327130">
+	    <animateTransform attributeName="transform" attributeType="XML" type="translate" values="-10,0;35,0;-10,0" dur="15s" repeatCount="indefinite"/>
+    </path>
+    
+    
+    
+    
+    <path d="M24.149 268.365h-6.686v-33.546h6.686v33.546z" fill="#e7253a">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,-15;0,5;0,-15" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M54.105 268.238H32.2v-21.904h21.904v21.904z" fill="#f8fbcb">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,12;0,0;0,12" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M101.615 250.872h10.952v-4.381h-10.952c-6.046 0-10.952 4.906-10.952 10.952 0 6.045 4.906 10.952 10.952 10.952h10.952v-4.381h-10.952a6.562 6.562 0 0 1-6.572-6.571 6.562 6.562 0 0 1 6.572-6.571z" fill="#57a32b">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,-10;0,0;0,-10" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M123.584 257.448a6.562 6.562 0 0 1 6.57-6.571h10.953v-4.381h-10.952c-6.046 0-10.952 4.906-10.952 10.952V268.4h4.38v-10.952z" fill="#327130">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,7;0,-7;0,7" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M141.102 268.243l12.747-22.244 12.85 22.244h-25.597z" fill="#e7253a">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,-11;0,0;0,-11" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M174.185 257.75l11.298-11.25h-7.49l-11.299 11.25 10.655 10.655h7.491z" fill="#f8fbcb">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,5;0,-5;0,5" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M75.14 257.628l7.836 3.596-8.83-10.306 7.059 3.275-9.071-10.601-9.098 10.601 7.058-3.275-8.856 10.306 7.863-3.596-9.232 10.762 12.265-5.636 12.238 5.636z" fill="#9bd872">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,8;0,0;0,8" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M216.547 268.797l-7.63-8.61h4.82l-6.444-7.27h4.382l-7.914-8.919-7.965 8.919h4.408l-6.47 7.27h4.871l-7.655 8.61z" fill="#57a32b">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,-5;0,5;0,-5" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M226.104 250.38v18.185m.515-17.67a.516.516 0 1 1-1.031 0 .516.516 0 0 1 1.031 0zm4.06 0a4.574 4.574 0 1 1-9.15.001 4.574 4.574 0 0 1 9.15-.001z" fill="none" stroke-width="2" stroke="#f8fbcb" stroke-linecap="square">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,-9;0,9;0,-9" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M263.581 254.206l-12.812 12.785-12.785-12.785" fill="none" stroke-width="2" stroke="#9bd872" stroke-linecap="square">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,4;0,-4;0,4" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M282.537 268.802v-4.434a6.641 6.641 0 0 1-6.65-6.65c0-3.68 2.97-6.651 6.65-6.651v-4.433c-6.118 0-11.084 4.965-11.084 11.084 0 6.118 4.966 11.084 11.084 11.084z" fill="#327130">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,-7;0,0;0,-7" dur="1s" repeatCount="indefinite"/>
+    </path>
+</svg>
