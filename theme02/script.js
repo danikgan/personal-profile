@@ -1,7 +1,7 @@
 $('document').ready(function(){
 	
 	/*----------------------------------- Loading -----------------------------------*/
-    $(document).ajaxStart(function(){$("#wait").css("display", "block");$( ".inside" ).html("Loading...");});
+    $(document).ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside" ).html("Loading...");});
     $(document).ajaxComplete(function(){$("#wait").css("display", "none");});
 	
 	
@@ -17,5 +17,4 @@ $('document').ready(function(){
 	
 	/*----------------------------------- Simple Transition: when to be closed -----------------------------------*/
 	$('.transition').click(function() {$('.featured').toggle();});
-	$('.transition_back').click(function() {$('.featured_return').toggle();});
 });		
