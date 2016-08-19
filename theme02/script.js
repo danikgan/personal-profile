@@ -1,5 +1,4 @@
 $('document').ready(function(){
-	$.ajaxSetup ({cache: false});
 	
 	$('.menEdu').click(function() {
 		$.ajaxSetup ({cache: false});
