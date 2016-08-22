@@ -4,12 +4,10 @@ $('document').ready(function(){
 		$('.education').toggle();
 		
 		if(colorEducation == true) {
-			$('.toggleEducation').css("color", "green");
-			$('.toggleEducation').html('Education <img src="files/activeState.svg" class="activeState">');
+			$('.toggleEducation').html('<li class="modifications" type="disc">Education</li>');
 			colorEducation = false;
 		} else {
-			$('.toggleEducation').css("color", "rgba(238, 46, 100, 1)");
-			$('.toggleEducation').html('Education');
+			$('.toggleEducation').html('<li class="modifications">Education</li>');
 			colorEducation = true;
 		}
 	});
@@ -19,12 +17,10 @@ $('document').ready(function(){
 		$('.techSkills').toggle();
 		
 		if(colorTechSkills == true) {
-			$('.toggleTechSkills').css("color", "green");
-			$('.toggleTechSkills').html('Technical Skills <img src="files/activeState.svg" class="activeState">');
+			$('.toggleTechSkills').html('<li class="modifications" type="disc">Technical Skills</li>');
 			colorTechSkills = false;
 		} else {
-			$('.toggleTechSkills').css("color", "rgba(238, 46, 100, 1)");
-			$('.toggleTechSkills').html('Technical Skills');
+			$('.toggleTechSkills').html('<li class="modifications">Technical Skills</li>');
 			colorTechSkills = true;
 		}
 	});
@@ -34,12 +30,10 @@ $('document').ready(function(){
 		$('.workExperience').toggle();
 		
 		if(colorWorkExperience == true) {
-			$('.toggleWorkExperience').css("color", "green");
-			$('.toggleWorkExperience').html('Work Experience <img src="files/activeState.svg" class="activeState">');
+			$('.toggleWorkExperience').html('<li class="modifications" type="disc">Work Experience</li>');
 			colorWorkExperience = false;
 		} else {
-			$('.toggleWorkExperience').css("color", "rgba(238, 46, 100, 1)");
-			$('.toggleWorkExperience').html('Work Experience');
+			$('.toggleWorkExperience').html('<li class="modifications">Work Experience</li>');
 			colorWorkExperience = true;
 		}
 	});
@@ -49,12 +43,10 @@ $('document').ready(function(){
 		$('.projects').toggle();
 		
 		if(colorProjects == true) {
-			$('.toggleProjects').css("color", "green");
-			$('.toggleProjects').html('Projects <img src="files/activeState.svg" class="activeState">');
+			$('.toggleProjects').html('<li class="modifications" type="disc">Projects</li>');
 			colorProjects = false;
 		} else {
-			$('.toggleProjects').css("color", "rgba(238, 46, 100, 1)");
-			$('.toggleProjects').html('Projects');
+			$('.toggleProjects').html('<li class="modifications">Projects</li>');
 			colorProjects = true;
 		}
 	});
@@ -64,12 +56,10 @@ $('document').ready(function(){
 		$('.coverLetter').toggle();
 		
 		if(colorCoverLetter == true) {
-			$('.toggleCoverLetter').css("color", "green");
-			$('.toggleCoverLetter').html('Cover Letter <img src="files/activeState.svg" class="activeState">');
+			$('.toggleCoverLetter').html('<li class="modifications" type="disc">Cover Letter</li>');
 			colorCoverLetter = false;
 		} else {
-			$('.toggleCoverLetter').css("color", "rgba(238, 46, 100, 1)");
-			$('.toggleCoverLetter').html('Cover Letter');
+			$('.toggleCoverLetter').html('<li class="modifications">Cover Letter</li>');
 			colorCoverLetter = true;
 		}
 	});
@@ -79,12 +69,10 @@ $('document').ready(function(){
 		$('.personalStatement').toggle();
 		
 		if(colorPersonalStatement == true) {
-			$('.togglePersonalStatement').css("color", "green");
-			$('.togglePersonalStatement').html('Personal Statement <img src="files/activeState.svg" class="activeState">');
+			$('.togglePersonalStatement').html('<li class="modifications" type="disc">Personal Statement</li>');
 			colorPersonalStatement = false;
 		} else {
-			$('.togglePersonalStatement').css("color", "rgba(238, 46, 100, 1)");
-			$('.togglePersonalStatement').html('Personal Statement');
+			$('.togglePersonalStatement').html('<li class="modifications">Personal Statement</li>');
 			colorPersonalStatement = true;
 		}
 	});

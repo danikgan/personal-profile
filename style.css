@@ -8,7 +8,7 @@ body:not(.different) {
 
 .backgroundPicture {
 	background-image: url(files/Enlight3.jpg);
-	background-size: 50px 20px; 
+	background-size: 500px 200px; 
 	background-position: center center;
 	
 	position: fixed;
@@ -20,10 +20,15 @@ body:not(.different) {
 	z-index: -1;
 }
 
-a:link { color: #0060ff; text-decoration: none; }
+/*a:link { color: #0060ff; text-decoration: none; }
 a:visited { color: #0060ff; text-decoration: none; }
 a:hover { color: #0092ff; text-decoration: underline; }
-a:active { color: #0092ff; text-decoration: underline; }
+a:active { color: #0092ff; text-decoration: underline; }*/
+
+a:link { color: #00b400; text-decoration: none; }
+a:visited { color: #00b400; text-decoration: none; }
+a:hover { color: #00de00; text-decoration: underline; }
+a:active { color: #00de00; text-decoration: underline; }
 
 
 /*----------------------------------- Main Page -----------------------------------*/
@@ -152,7 +157,11 @@ li.modifications {
 	cursor: pointer;
 	padding-left: 3%;
 	margin: 0 0 0 0;
+	color: rgba(238, 46, 100, 1);
 }
+
+li.modifications:hover { color: hotpink; text-decoration: underline; }
+li.modifications:active { color: hotpink; text-decoration: underline; }
 
 /*----------------------------------- Content -----------------------------------*/
 .content_block {
@@ -227,47 +236,6 @@ ul.noMarginTop {
 .heading_of_blocks.extendedTechSkills {
 	padding: 3% 0 1% 0;
 }
-
-
-
-
-/*.toggleEducation:link { color: rgba(238, 46, 100, 1); text-decoration: none; }
-.toggleEducation:visited { color: green; text-decoration: none; }*/
-.toggleEducation {
-	color: rgba(238, 46, 100, 1);
-}
-.toggleEducation:hover { color: hotpink; text-decoration: underline; }
-.toggleEducation:active { color: green; text-decoration: underline; }
-
-.toggleTechSkills {
-	color: rgba(238, 46, 100, 1);
-}
-.toggleTechSkills:hover { color: hotpink; text-decoration: underline; }
-.toggleTechSkills:active { color: green; text-decoration: underline; }
-
-.toggleWorkExperience {
-	color: rgba(238, 46, 100, 1);
-}
-.toggleWorkExperience:hover { color: hotpink; text-decoration: underline; }
-.toggleWorkExperience:active { color: green; text-decoration: underline; }
-
-.toggleProjects {
-	color: rgba(238, 46, 100, 1);
-}
-.toggleProjects:hover { color: hotpink; text-decoration: underline; }
-.toggleProjects:active { color: green; text-decoration: underline; }
-
-.toggleCoverLetter {
-	color: rgba(238, 46, 100, 1);
-}
-.toggleCoverLetter:hover { color: hotpink; text-decoration: underline; }
-.toggleCoverLetter:active { color: green; text-decoration: underline; }
-
-.togglePersonalStatement {
-	color: rgba(238, 46, 100, 1);
-}
-.togglePersonalStatement:hover { color: hotpink; text-decoration: underline; }
-.togglePersonalStatement:active { color: green; text-decoration: underline; }
 
 
 .activeState {
