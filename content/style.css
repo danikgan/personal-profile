@@ -1,0 +1,63 @@
+/*----------------------------------- SVG Education -----------------------------------*/
+.svgTimeLine {
+	cursor: pointer;
+	width: 80%;
+	border-radius: 10px;
+	border: 2px solid yellow;
+	margin-left: 10%;
+	max-height: 350px;
+	background-color: rgba(127, 127, 127, 0.01);
+}
+
+
+/*----------------------------------- Content -----------------------------------*/
+.hidden {display: none;}
+
+.header {
+	color: gray;
+	font-size: 125%;
+	margin: 0 0 50px 0;
+	border: 1px dashed black;
+	padding: 10px;
+	text-align: center;
+}
+
+.heading_inside_blocks {
+	text-decoration: underline;
+	font-size: 125%;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.achievements {
+	display: inline-block;
+	vertical-align: top;
+	margin: 1% 0 1% 10%;
+	padding: 2% 2% 2% 2%;
+	background-color: rgba(255, 255, 0, 0.1);
+}
+
+#moreEducation {
+	padding: 2%;
+}
+
+/*----------------------------------- Overrides -----------------------------------*/
+@media screen and (min-width: 1200px) {.svgTimeLine {width: 60%; margin-left: 20%;}}
+
+@media screen and (max-width: 850px) {}
+
+@media screen and (max-width: 550px) {
+	.achievements {padding: 3% 3% 3% 3%;}
+	body {font-size: 90%;}
+	.svgTimeLine {width: 100%; margin-left: 0; transform: scale(1.2);}
+	.header {font-size: 110%;}
+	.heading_inside_blocks {font-size: 110%;}
+	
+	.button {box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25); transition: 0.3s;}
+	.button:hover {transform: scale(1.25);}
+	.button:active {transform: scale(1.18) translate(0px, 3px);}
+}
+
+@media screen and (max-width: 350px) {
+	body {font-size: 80%;}
+}
