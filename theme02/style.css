@@ -193,6 +193,10 @@ body {background: rgba(255,255,0,0.5);cursor: default;}
 }
 
 @media screen and (max-width: 350px) {
+	#wait {
+		width: 25%;
+	}
+	
 	.img-circle {
 	    height: 125px;
 	}
