@@ -41,11 +41,9 @@
 
 #moreEdu_big {display: block;}
 #moreEdu_small {
-	margin-left: 25%;
-	width: 50%;
+	width: 100%;
 	max-height: 50px;
 	background-color: #32b9be;
-	border-radius: 10px;
 	display: block;
 }
 
