@@ -136,7 +136,8 @@ body {background: rgba(255,255,0,0.5);cursor: default;}
 	
 	top: 5%;
 	right: 5%;
-	width: 5%; 
+	width: 5%;
+	min-width: 75px;
 	
 	background: white;
 	padding: .3%;
@@ -158,12 +159,33 @@ body {background: rgba(255,255,0,0.5);cursor: default;}
 }
 
 /*----------------------------------- Optimisations -----------------------------------*/
-
 @media screen and (max-width: 550px) {
 	.content {
 		top: 2%;
 		bottom: 2%;
 		right: 2%;
 		left: 2%;
+	}
+	
+	.section {
+		font-size: 20px;
+		
+		width: 300px;
+		max-width: 80%;
+		line-height: 100px;
+	    height: 100px;
+		
+		background: white;
+	    border: 2px solid yellow;
+	}
+	
+	.closeSection {
+		min-width: 75px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.closeSection {
+		min-width: 50px;
 	}
 }
