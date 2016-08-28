@@ -32,7 +32,7 @@
 .achievements {
 	display: inline-block;
 	vertical-align: top;
-	margin: 1% 0 1% 10%;
+	margin: 3% 0 3% 10%;
 	padding: 2% 2% 2% 2%;
 	background-color: rgba(255, 255, 0, 0.1);
 }
@@ -58,8 +58,12 @@
 	.achievements {padding: 3% 3% 3% 3%;}
 	body {font-size: 90%;}
 	.svgTimeLine {width: 100%; margin-left: 0; transform: scale(1.2);}
-	.header {font-size: 110%;}
-	.heading_inside_blocks {font-size: 110%;}
+	.header {font-size: 115%;}
+	.heading_inside_blocks {font-size: 115%;}
+	
+	.heading_inside_blocks {
+		margin-bottom: 10px;
+	}
 	
 	#moreEdu_big {display: none;}
 	#moreEdu_small {display: block;}
