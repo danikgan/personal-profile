@@ -1,4 +1,4 @@
-body {background: rgba(255,255,0,0.5);}
+body {background: rgba(255,255,0,0.5);cursor: default;}
 
 .button {box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25); transition: 0.3s;}
 .button:hover {transform: scale(1.05);}
@@ -106,7 +106,6 @@ body {background: rgba(255,255,0,0.5);}
 	position: fixed;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
-	body {overflow-y: hidden;}
 	z-index: 5;
 	
 	top: 3%;
@@ -160,4 +159,11 @@ body {background: rgba(255,255,0,0.5);}
 
 /*----------------------------------- Optimisations -----------------------------------*/
 
-@media screen and (max-width: 1000px) {}
+@media screen and (max-width: 550px) {
+	.content {
+		top: 2%;
+		bottom: 2%;
+		right: 2%;
+		left: 2%;
+	}
+}
