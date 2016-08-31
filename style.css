@@ -1,8 +1,278 @@
+#largeScreen {display: block;}
+#smallScreen {display: block;}
+@media screen and (min-width: 1024px) {
+	#largeScreen {display: block;}
+	#smallScreen {display: none;}
+}
+@media screen and (max-width: 1024px) {
+	#largeScreen {display: none;}
+	#smallScreen {display: block;}
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------- Lower Page ----------------------------------------------------------------------*/
+.button {box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25); transition: 0.3s;}
+.button:hover {transform: scale(1.05);}
+.button:active {transform: scale(0.98) translate(0px, 3px);}
+
+.hidden {display: none;}
+
+#wait {
+	z-index: 10;
+	width: 15%;
+	position: fixed;
+	display: none;
+	top: 35%;
+	left: 42.5%;
+	background-color: white;
+	border-radius: 10px;
+	
+	animation-name: appearance_closeSection;
+    animation-duration: .1s;
+    animation-delay: .3s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+}
+
+.gradientCommon {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+	min-height: 100%;
+	min-width: 100%;
+	
+	z-index: -1;
+}
+
+#gradient01 {
+    /* For browsers that do not support gradients */
+    background: rgba(0,255,10,0.5);
+    
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(rgba(0,255,10,0.5) 50%, rgba(255,255,0,0.5) 100%);
+    
+    /* For Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(rgba(0,255,10,0.5) 50%, rgba(255,255,0,0.5) 100%);
+    
+    /* For Firefox 3.6 to 15 */
+    background: -moz-linear-gradient(rgba(0,255,10,0.5) 50%, rgba(255,255,0,0.5) 100%);
+    
+    /* Standard syntax (must be last) */
+    background: linear-gradient(rgba(0,255,10,0.5) 50%, rgba(255,255,0,0.5) 100%);
+}
+
+#gradient02 {
+	background: red;
+	background: -webkit-linear-gradient(left top, red, yellow);
+	background: -o-linear-gradient(bottom right, red, yellow);
+	background: -moz-linear-gradient(bottom right, red, yellow);
+	background: linear-gradient(to bottom right, red, yellow);
+}
+
+
+
+/*----------------------------------- Body Sections -----------------------------------*/
+
+#upperBody {}
+
+#lowerBody {padding: 5%;}
+
+
+.img-circle {
+	cursor: pointer;
+	
+	margin: 3% 3% 2% 5%;
+	padding: 10px;
+    border-radius: 150px;
+    height: 175px;
+    
+    background: white;
+    border: 2px solid yellow;
+}
+
+
+.section {
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	
+	font-size: 25px;
+	
+	margin: 0 0 10px 10px;
+	width: 300px;
+	line-height: 125px;
+    height: 125px;
+	
+	background: white;
+    border: 2px solid yellow;
+}
+
+
+/*----------------------------------- Content -----------------------------------*/
+
+.content {
+	position: fixed;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	z-index: 5;
+	
+	top: 3%;
+	bottom: 3%;
+	right: 3%;
+	left: 3%;
+	
+	padding: 3%;
+	
+	border-radius: 10px 10px 10px 10px;
+	background: white;
+	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.25);
+	
+	
+	animation-name: appearance;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes appearance {
+	from {opacity: 0;transform: scale(0.1);}
+    to {opacity: 1;transform: scale(1);}
+}
+
+.closeSection {
+	cursor: pointer;
+	position: fixed;
+	
+	top: 5%;
+	right: 5%;
+	width: 5%;
+	min-width: 75px;
+	
+	background: white;
+	padding: .3%;
+	border-radius: 5px;
+	border: 1px yellow solid; 
+	
+	z-index: 6;
+	
+	animation-name: appearance_closeSection;
+    animation-duration: .1s;
+    animation-delay: .3s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes appearance_closeSection {
+	from {opacity: 0; transform: scale(0.8);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+/*----------------------------------- Optimisations -----------------------------------*/
+@media screen and (max-width: 850px) {
+	.content {
+		border-radius: 5px;
+		
+		top: 1.5%;
+		bottom: 1.5%;
+		right: 1.5%;
+		left: 1.5%;
+	}
+}
+
+@media screen and (max-height: 550px) {
+	.content {
+		border-radius: 0px;
+		
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+	
+	.closeSection {
+		width: 15%;
+		min-width: 40px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.img-circle {
+		margin: 0px 0px 20px 0px;
+	    border-radius: 0px;
+	    height: 150px;
+	}
+	
+	.content {
+		border-radius: 0px;
+		
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+	
+	.section {
+		font-size: 20px;
+		
+		width: 300px;
+		max-width: 80%;
+		line-height: 100px;
+	    height: 100px;
+		
+		background: white;
+	    border: 2px solid yellow;
+	}
+	
+	.closeSection {
+		min-width: 50px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	#wait {
+		top: 35%;
+		left: 37.5%;
+		width: 25%;
+	}
+	
+	.img-circle {
+	    height: 125px;
+	}
+	
+	.closeSection {
+		min-width: 40px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------- Larger Page ----------------------------------------------------------------------*/
 body:not(.different) {
 	background-color: rgba(0, 255, 255, 0.05);
-	padding: 1%;
-	font-size: 95%;
-	min-width: 800px;
 	cursor: default;
 }
 
@@ -242,25 +512,4 @@ ul.noMarginTop {
 	margin-left: 3px;
 	width: 5px;
 	vertical-align: 10%;
-}
-
-/*----------------------------------- Overrides -----------------------------------*/
-@media screen and (max-width: 1150px) {}
-
-@media screen and (max-width: 850px) {
-	body:not(.different) {
-		font-size: 5px;
-	}
-}
-
-@media screen and (max-width: 550px) {
-	body:not(.different) {
-		font-size: 3px;
-	}
-}
-
-@media screen and (max-width: 350px) {
-	body:not(.different) {
-		font-size: 1px;
-	}
 }
