@@ -59,7 +59,7 @@
     height: 175px;
     
     background: white;
-    border: solid #1f4980;
+    border: solid #1e627f;
 }
 
 
@@ -76,7 +76,7 @@
     height: 125px;
 	
 	background: white;
-    border: solid #1f4980;
+    border: solid #1e627f;
 }
 
 
@@ -114,15 +114,15 @@
 	cursor: pointer;
 	position: fixed;
 	
-	top: 5%;
-	right: 5%;
-	width: 5%;
-	min-width: 75px;
+	top: 3%;
+	right: 3%;
+	width: 3%;
+	min-width: 35px;
 	
 	background: white;
-	padding: .3%;
 	border-radius: 5px;
-	border: 2px black solid; 
+	border: 2px #1e627f solid; 
+	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0);
 	
 	z-index: 6;
 	
@@ -148,6 +148,11 @@
 		right: 1.5%;
 		left: 1.5%;
 	}
+	
+	.closeSection {
+		top: 1.5%;
+		right: 1.5%;
+	}
 }
 @media screen and (max-width: 850px) {
 	.section {
@@ -168,14 +173,14 @@
 	}
 	
 	.closeSection {
-		width: 15%;
-		min-width: 40px;
+		width: 5%;
+		min-width: 25px;
 	}
 }
 
 @media screen and (max-width: 550px) {
 	.img-circle {
-		margin: 0px 0px 20px 0px;
+		margin: 0px 5% 20px 0px;
 	    border-radius: 0px;
 	    height: 150px;
 	}
@@ -201,7 +206,8 @@
 	}
 	
 	.closeSection {
-		min-width: 50px;
+		top: 0.5%;
+		right: 0.5%;
 	}
 }
 
@@ -214,10 +220,6 @@
 	
 	.img-circle {
 	    height: 125px;
-	}
-	
-	.closeSection {
-		min-width: 40px;
 	}
 }
 
@@ -238,7 +240,7 @@
 
 
 /*---------------------------------------------------------------------- Larger Page ----------------------------------------------------------------------*/
-body:not(.different) {
+body {
 	background-color: rgba(0, 255, 255, 0.05);
 	cursor: default;
 }
