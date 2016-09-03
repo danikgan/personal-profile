@@ -3,7 +3,7 @@
 	cursor: pointer;
 	width: 80%;
 	border-radius: 10px;
-	border: 2px solid yellow;
+	border: 2px solid rgba(255, 255, 0, 0.5);
 	margin-left: 10%;
 	max-height: 350px;
 	background-color: rgba(127, 127, 127, 0.01);
