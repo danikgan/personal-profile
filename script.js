@@ -24,8 +24,8 @@ $('document').ready(function(){
 	/*----------------------------------- Content for Larger Version (loaded externally) -----------------------------------*/
 	var colorEducation = true;
 	$('.colorEdu').click(function() {
-		$(document).ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside_edu" ).html("");});
-	    $(document).ajaxComplete(function(){$("#wait").css("display", "none");});
+		$('.education').ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside_edu" ).html("");});
+	    $('.education').ajaxComplete(function(){$("#wait").css("display", "none");});
 	    
 		$( ".inside_edu" ).load( "content/education.html");
 		$('.education').toggle();
@@ -41,8 +41,8 @@ $('document').ready(function(){
 	
 	var colorTechSkills = true;
 	$('.colorTechSkills').click(function() {
-		$(document).ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside_techskills" ).html("");});
-	    $(document).ajaxComplete(function(){$("#wait").css("display", "none");});
+		$('techSkills').ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside_techskills" ).html("");});
+	    $('techSkills').ajaxComplete(function(){$("#wait").css("display", "none");});
 		
 		$( ".inside_techskills" ).load( "content/techskills.html");
 		$('.techSkills').toggle();
@@ -58,8 +58,8 @@ $('document').ready(function(){
 	
 	var colorWorkExperience = true;
 	$('.colorWorkExperience').click(function() {
-		$(document).ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside_workexp" ).html("");});
-	    $(document).ajaxComplete(function(){$("#wait").css("display", "none");});
+		$('workExperience').ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside_workexp" ).html("");});
+	    $('workExperience').ajaxComplete(function(){$("#wait").css("display", "none");});
 		
 		$( ".inside_workexp" ).load( "content/workexp.html");
 		$('.workExperience').toggle();
