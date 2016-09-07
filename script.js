@@ -4,7 +4,7 @@ $('document').ready(function(){
     $(document).ajaxComplete(function(){$("#wait").css("display", "none");});
 	
 	
-	/*----------------------------------- Content (loaded externally) -----------------------------------*/
+	/*----------------------------------- Content for Smaller Version (loaded externally) -----------------------------------*/
 	$.ajaxSetup ({cache: false});
 	$('.menEdu').click(function() {$( ".inside" ).load( "content/education.html");	$('.featured').toggle();});
 	$('.menTechSkills').click(function() {$( ".inside" ).load( "content/techskills.html");	$('.featured').toggle();});	
@@ -19,9 +19,14 @@ $('document').ready(function(){
 	
 	
 	
-	/*----------------------------------- Content (loaded externally) -----------------------------------*/
+	
+	
+	/*----------------------------------- Content for Larger Version (loaded externally) -----------------------------------*/
 	var colorEducation = true;
 	$('.colorEdu').click(function() {
+		$(document).ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside_edu" ).html("");});
+	    $(document).ajaxComplete(function(){$("#wait").css("display", "none");});
+	    
 		$( ".inside_edu" ).load( "content/education.html");
 		$('.education').toggle();
 		
@@ -36,6 +41,9 @@ $('document').ready(function(){
 	
 	var colorTechSkills = true;
 	$('.colorTechSkills').click(function() {
+		$(document).ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside_techskills" ).html("");});
+	    $(document).ajaxComplete(function(){$("#wait").css("display", "none");});
+		
 		$( ".inside_techskills" ).load( "content/techskills.html");
 		$('.techSkills').toggle();
 		
@@ -50,6 +58,9 @@ $('document').ready(function(){
 	
 	var colorWorkExperience = true;
 	$('.colorWorkExperience').click(function() {
+		$(document).ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside_workexp" ).html("");});
+	    $(document).ajaxComplete(function(){$("#wait").css("display", "none");});
+		
 		$( ".inside_workexp" ).load( "content/workexp.html");
 		$('.workExperience').toggle();
 		
@@ -64,6 +75,9 @@ $('document').ready(function(){
 	
 	var colorProjects = true;
 	$('.colorProjects').click(function() {
+		$(document).ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside_proj" ).html("");});
+	    $(document).ajaxComplete(function(){$("#wait").css("display", "none");});
+		
 		$( ".inside_proj" ).load( "content/proj.html");
 		$('.projects').toggle();
 		
@@ -78,6 +92,9 @@ $('document').ready(function(){
 	
 	var colorCoverLetter = true;
 	$('.colorCoverLetter').click(function() {
+		$(document).ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside_covlet" ).html("");});
+	    $(document).ajaxComplete(function(){$("#wait").css("display", "none");});
+		
 		$( ".inside_covlet" ).load( "content/covlet.html");
 		$('.coverLetter').toggle();
 		
@@ -92,6 +109,9 @@ $('document').ready(function(){
 	
 	var colorPersonalStatement = true;
 	$('.colorPersonalStatement').click(function() {
+		$(document).ajaxStart(function(){$("#wait").css("display", "block");	$( ".inside_perstat" ).html("");});
+	    $(document).ajaxComplete(function(){$("#wait").css("display", "none");});
+		
 		$( ".inside_perstat" ).load( "content/perstat.html");
 		$('.personalStatement').toggle();
 		

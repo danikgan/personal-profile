@@ -28,7 +28,7 @@
 #wait {
 	z-index: 10;
 	width: 15%;
-	position: fixed;
+	position: relative;
 	display: none;
 	top: 35%;
 	left: 42.5%;
