@@ -6,6 +6,8 @@ $('document').ready(function(){
 	
 	/*----------------------------------- Content for Smaller Version (loaded externally) -----------------------------------*/
 	$.ajaxSetup ({cache: false});
+	$('.menPerInfo').click(function() {$( ".inside" ).load( "content/perinfo.html");	$('.featured').toggle();});
+	$('.menSum').click(function() {$( ".inside" ).load( "content/summary.html");	$('.featured').toggle();});
 	$('.menEdu').click(function() {$( ".inside" ).load( "content/education.html");	$('.featured').toggle();});
 	$('.menTechSkills').click(function() {$( ".inside" ).load( "content/techskills.html");	$('.featured').toggle();});	
 	$('.menWorkExp').click(function() {$( ".inside" ).load( "content/workexp.html");	$('.featured').toggle();});
