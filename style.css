@@ -264,7 +264,7 @@ a:active { color: #00de00; text-decoration: underline; }
 /*---------------------------------------------------------------------- Larger Page ----------------------------------------------------------------------*/
 
 
-.menu_block {
+#menu_block {
 	z-index: 1;
 	
 	position: fixed;
@@ -286,6 +286,12 @@ a:active { color: #00de00; text-decoration: underline; }
 #myName {
 	font-size: 150%;
 	font-weight: bold;
+}
+
+#midMenu {
+	border-color: #1e627f;
+    border-width: medium;
+    border-style: solid none solid none;
 }
 
 .section_large {
