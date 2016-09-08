@@ -43,11 +43,10 @@
 }
 #wait_large {
 	z-index: 10;
-	width: 15%;
+	width: 10%;
 	position: relative;
 	display: block;
-	top: 35%;
-	left: 42.5%;
+	left: 45%;
 	background-color: white;
 	border-radius: 10px;
 	
