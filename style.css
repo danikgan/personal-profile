@@ -50,12 +50,6 @@
 	left: 42.5%;
 	background-color: white;
 	border-radius: 10px;
-	
-	animation-name: appearance_closeSection;
-    animation-duration: .1s;
-    animation-delay: .3s;
-    animation-fill-mode: backwards;
-    animation-iteration-count: 1;
 }
 
 
