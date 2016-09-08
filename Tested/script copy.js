@@ -24,100 +24,86 @@ $('document').ready(function(){
 	
 	
 	/*----------------------------------- Content for Larger Version (loaded externally) -----------------------------------*/
-	var colorSummary = true;
-	$('.menSum').click(function() {
-		$( ".inside_sum" ).load( "content/summary.html");
-		$('.summary').toggle();
-		
-		if(colorSummary == true) {
-			$(".colorChange_sum").css("background", "rgba(255, 0, 255, 0.05)");
-			colorSummary = false;
-		} else {
-			$(".colorChange_sum").css("background", "rgba(0, 0, 255, 0.05)");
-			colorSummary = true;
-		}
-	});
-	
 	var colorEducation = true;
-	$('.menEdu').click(function() {
+	$('.colorEdu').click(function() {
 		$( ".inside_edu" ).load( "content/education.html");
 		$('.education').toggle();
 		
 		if(colorEducation == true) {
-			$(".colorChange_edu").css("background", "rgba(255, 0, 255, 0.05)");
+			$('.colorEdu').html('<li class="modifications" type="disc">Education</li>');
 			colorEducation = false;
 		} else {
-			$(".colorChange_edu").css("background", "rgba(0, 0, 255, 0.05)");
+			$('.colorEdu').html('<li class="modifications">Education</li>');
 			colorEducation = true;
 		}
 	});
 	
 	var colorTechSkills = true;
-	$('.menTechSkills').click(function() {		
+	$('.colorTechSkills').click(function() {		
 		$( ".inside_techskills" ).load( "content/techskills.html");
 		$('.techSkills').toggle();
 		
 		if(colorTechSkills == true) {
-			$(".colorChange_techskills").css("background", "rgba(255, 0, 255, 0.05)");
+			$('.colorTechSkills').html('<li class="modifications" type="disc">Technical Skills</li>');
 			colorTechSkills = false;
 		} else {
-			$(".colorChange_techskills").css("background", "rgba(0, 0, 255, 0.05)");
+			$('.colorTechSkills').html('<li class="modifications">Technical Skills</li>');
 			colorTechSkills = true;
 		}
 	});
 	
 	var colorWorkExperience = true;
-	$('.menWorkExp').click(function() {
+	$('.colorWorkExperience').click(function() {
 		$( ".inside_workexp" ).load( "content/workexp.html");
 		$('.workExperience').toggle();
 		
 		if(colorWorkExperience == true) {
-			$(".colorChange_workexp").css("background", "rgba(255, 0, 255, 0.05)");
+			$('.colorWorkExperience').html('<li class="modifications" type="disc">Work Experience</li>');
 			colorWorkExperience = false;
 		} else {
-			$(".colorChange_workexp").css("background", "rgba(0, 0, 255, 0.05)");
+			$('.colorWorkExperience').html('<li class="modifications">Work Experience</li>');
 			colorWorkExperience = true;
 		}
 	});
 	
 	var colorProjects = true;
-	$('.menProj').click(function() {
+	$('.colorProjects').click(function() {
 		$( ".inside_proj" ).load( "content/proj.html");
 		$('.projects').toggle();
 		
 		if(colorProjects == true) {
-			$(".colorChange_proj").css("background", "rgba(255, 0, 255, 0.05)");
+			$('.colorProjects').html('<li class="modifications" type="disc">Projects</li>');
 			colorProjects = false;
 		} else {
-			$(".colorChange_proj").css("background", "rgba(0, 0, 255, 0.05)");
+			$('.colorProjects').html('<li class="modifications">Projects</li>');
 			colorProjects = true;
 		}
 	});
 	
 	var colorCoverLetter = true;
-	$('.menCovLet').click(function() {		
+	$('.colorCoverLetter').click(function() {		
 		$( ".inside_covlet" ).load( "content/covlet.html");
 		$('.coverLetter').toggle();
 		
 		if(colorCoverLetter == true) {
-			$(".colorChange_covlet").css("background", "rgba(255, 0, 255, 0.05)");
+			$('.colorCoverLetter').html('<li class="modifications" type="disc">Cover Letter</li>');
 			colorCoverLetter = false;
 		} else {
-			$(".colorChange_covlet").css("background", "rgba(0, 0, 255, 0.05)");
+			$('.colorCoverLetter').html('<li class="modifications">Cover Letter</li>');
 			colorCoverLetter = true;
 		}
 	});
 	
 	var colorPersonalStatement = true;
-	$('.menPerStat').click(function() {
+	$('.colorPersonalStatement').click(function() {
 		$( ".inside_perstat" ).load( "content/perstat.html");
 		$('.personalStatement').toggle();
 		
 		if(colorPersonalStatement == true) {
-			$(".colorChange_perstat").css("background", "rgba(255, 0, 255, 0.05)");
+			$('.colorPersonalStatement').html('<li class="modifications" type="disc">Personal Statement</li>');
 			colorPersonalStatement = false;
 		} else {
-			$(".colorChange_perstat").css("background", "rgba(0, 0, 255, 0.05)");
+			$('.colorPersonalStatement').html('<li class="modifications">Personal Statement</li>');
 			colorPersonalStatement = true;
 		}
 	});

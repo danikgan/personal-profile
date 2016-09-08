@@ -9,15 +9,7 @@
 	#smallScreen {display: block;}
 }
 
-body {
-	background-color: rgba(0, 255, 255, 0.05);
-	cursor: default;
-}
 
-a:link { color: #00b400; text-decoration: none; }
-a:visited { color: #00b400; text-decoration: none; }
-a:hover { color: #00de00; text-decoration: underline; }
-a:active { color: #00de00; text-decoration: underline; }
 
 
 
@@ -262,84 +254,244 @@ a:active { color: #00de00; text-decoration: underline; }
 
 
 /*---------------------------------------------------------------------- Larger Page ----------------------------------------------------------------------*/
+body {
+	background-color: rgba(0, 255, 255, 0.05);
+	//background-image: url('files/File_000.jpeg');
+	//background-size: 500px 500px;
+	cursor: default;
+	margin: 0;
+}
 
-
-.menu_block {
-	z-index: 1;
+.backgroundPicture {
+	background-image: url(files/Enlight3.jpg);
+	background-size: 500px 200px; 
+	background-position: center center;
 	
 	position: fixed;
 	top: 0;
-	bottom: 0;
 	left: 0;
-	width: 15%;
+	right: 0;
+	bottom: 0;
 	
-	border-style: none solid none none;
-	border-color: #1e627f;
+	z-index: -1;
+}
+
+/*a:link { color: #0060ff; text-decoration: none; }
+a:visited { color: #0060ff; text-decoration: none; }
+a:hover { color: #0092ff; text-decoration: underline; }
+a:active { color: #0092ff; text-decoration: underline; }*/
+
+a:link { color: #00b400; text-decoration: none; }
+a:visited { color: #00b400; text-decoration: none; }
+a:hover { color: #00de00; text-decoration: underline; }
+a:active { color: #00de00; text-decoration: underline; }
+
+
+/*----------------------------------- Main Page -----------------------------------*/
+
+.row {
+	z-index: 1;
+	display: flex; /* equal height of the children */
+	margin-left: 18%;
+	width: 82%;
+}
+
+
+/*---- Block of Profile Picture ----*/
+.profilePicture_block {
+	z-index: 2;
+	position: fixed;
+	width: 16.5%;
+	
+	border-style: solid solid solid solid;
 	background-color: white;
-	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.5);
+	border-radius: 10px 10px 10px 10px;
+	padding: 1%;
 	
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
+	min-width: 125px;
 }
 
-#profilePicture {width: 75%;}
-#myName {
-	font-size: 150%;
-	font-weight: bold;
+#profilePicture {
+	width: 80%;
+    z-index: 2;
 }
 
-.section_large {
-	text-align: center;
-	cursor: pointer;
+#profileName {
+	margin-top: 5%;
+	font-size: 175%;
 	
+    z-index: 2;
+}
+
+.littlePhrase {
+	margin-top: 3%;
+	
+	font-style: oblique;
+	font-size: 90%;
+}
+
+
+
+/*---- Blocks of Info ----*/
+.personalInfo_block {
+	display: inline-block;
+	vertical-align: top;
+	
+	width: 55%;
+}
+
+.personalInfo {
+	z-index: 1;
+	padding: 3%;
+	margin: 0 1% 0 5%;
+	
+	border: solid;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.personalInfo.extended {
+	margin-top: 1%;
+	vertical-align: bottom;
+}
+
+.heading_of_blocks {
+	text-decoration: underline;
+	padding: 0 0 3% 0;
+	font-size: 125%;
+}
+
+.personalInfo_table {
 	width: 100%;
-	line-height: 50px;
-    height: 50px;
-	
-	background: rgba(0, 0, 255, 0.05);
-    border-color: #1e627f;
-    border-width: thin;
-    border-style: solid none none none;
 }
-.section_large.colorChange_sum {background: rgba(0, 0, 255, 0.05);}
-.section_large.colorChange_edu {background: rgba(0, 0, 255, 0.05);}
-.section_large.colorChange_techskills {background: rgba(0, 0, 255, 0.05);}
-.section_large.colorChange_workexp {background: rgba(0, 0, 255, 0.05);}
-.section_large.colorChange_proj {background: rgba(0, 0, 255, 0.05);}
-.section_large.colorChange_covlet {background: rgba(0, 0, 255, 0.05);}
-.section_large.colorChange_perstat {background: rgba(0, 0, 255, 0.05);}
-.section_large.name {
-	text-align: left;
-	cursor: default;
-	
-	border-width: medium;
-	background: rgba(0, 255, 255, 0.05);
+
+table, th, td {
+	padding: 3px 10px 3px 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
-.section_large.download {background: rgba(255, 255, 0, 0.05);}
+
+td.main { width: 35%; }
+
+
+
+/*---- Block of Summary Statement ----*/
+.summary_block {
+	z-index: 1;
+	display: inline-block;
+	vertical-align: top;
+	
+	padding: 3%;
+	
+	width: 45%;
+	border: solid;
+	border-radius: 10px;
+	background-color: white;
+}
+
+
+
+/*---- Menu ----*/
+.menu {
+	z-index: 2;
+	position: fixed;
+	
+	width: 15%;
+	padding: 1%;
+	
+	border-style: hidden solid solid solid;
+	border-radius: 0px 0px 10px 10px;
+	background-color: white;
+}
+
+ul.noMargin {
+	margin: 5px 0 0 0;
+	list-style-type: circle;
+}
+
+li.modifications {
+	cursor: pointer;
+	padding-left: 3%;
+	margin: 0 0 0 0;
+	color: rgba(238, 46, 100, 1);
+}
+
+li.modifications:hover { color: hotpink; text-decoration: underline; }
+li.modifications:active { color: hotpink; text-decoration: underline; }
 
 /*----------------------------------- Content -----------------------------------*/
-.content_large {
-	z-index: 1;
-	
+.content_block {
 	margin-top: 10px;
-	margin-left: 16%;
-	padding: 4%;
-	width: 75%;
+	margin-left: 20%;
+	width: 74%;
+	padding: 3%;
 	
 	background-color: white;
-	border: solid #1e627f;
+	border: solid;
 	border-radius: 10px;
-	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.5);
+}
+
+.header {
+	color: gray;
+	font-size: large;
+	margin: 0 0 5% 0;
+	border: 1px dashed black;
+	padding: 1%;
+	text-align: center;
 }
 
 
-
-/*----------------------------------- Optimisations -----------------------------------*/
-@media screen and (min-width: 1600px) {
-	#profilePicture {width: 50%;}
-	#myName {font-size: 200%;}
+.goUp {
+	width: 5%;
 }
 
-@media screen and (max-width: 1000px) {
-	#myName {font-size: 125%;}
+
+.heading_of_blocks.extendedMarginTop { margin-top: 10%; }
+.heading_of_blocks.noMarginBottom { padding-bottom: 1%; }
+
+
+.svgEducation {
+	width: 5%;
+	margin-left: -1%;
+}
+
+.colourExplanation {
+	font-size: 90%;
+	display: inline-block;
+	padding: 2%;
+	margin-top: 3%;
+	background-color: rgba(127, 127, 127, 0.1);
+}
+
+.yearsonEducation {
+	width: auto;
+	margin-top: 0;
+}
+
+.yearsonEducation_each {
+	font-size: 80%;
+	width: 8%;
+	display: inline-block;
+}
+
+ul.noMarginTop {
+	margin-top: 0;
+}
+
+.achievementsEducation {
+	display: inline-block;
+	margin: 1% 0 1% 10%;
+	padding: 2% 5% 2% 5%;
+	background-color: rgba(255, 255, 0, 0.1);
+}
+
+.heading_of_blocks.extendedTechSkills {
+	padding: 3% 0 1% 0;
+}
+
+
+.activeState {
+	margin-left: 3px;
+	width: 5px;
+	vertical-align: 10%;
 }
