@@ -30,10 +30,10 @@ $('document').ready(function(){
 		$('.summary').toggle();
 		
 		if(colorSummary == true) {
-			$(".colorChange_sum").css("background", "rgba(255, 0, 255, 0.05)");
+			$(".colorChange_sum").css("background", "rgba(255, 0, 255, 0.1)");
 			colorSummary = false;
 		} else {
-			$(".colorChange_sum").css("background", "rgba(0, 0, 255, 0.05)");
+			$(".colorChange_sum").css("background", "rgba(0, 255, 255, 0.1)");
 			colorSummary = true;
 		}
 	});
@@ -44,10 +44,10 @@ $('document').ready(function(){
 		$('.education').toggle();
 		
 		if(colorEducation == true) {
-			$(".colorChange_edu").css("background", "rgba(255, 0, 255, 0.05)");
+			$(".colorChange_edu").css("background", "rgba(255, 0, 255, 0.1)");
 			colorEducation = false;
 		} else {
-			$(".colorChange_edu").css("background", "rgba(0, 0, 255, 0.05)");
+			$(".colorChange_edu").css("background", "rgba(0, 0, 255, 0.1)");
 			colorEducation = true;
 		}
 	});
@@ -58,10 +58,10 @@ $('document').ready(function(){
 		$('.techSkills').toggle();
 		
 		if(colorTechSkills == true) {
-			$(".colorChange_techskills").css("background", "rgba(255, 0, 255, 0.05)");
+			$(".colorChange_techskills").css("background", "rgba(255, 0, 255, 0.1)");
 			colorTechSkills = false;
 		} else {
-			$(".colorChange_techskills").css("background", "rgba(0, 0, 255, 0.05)");
+			$(".colorChange_techskills").css("background", "rgba(0, 0, 255, 0.1)");
 			colorTechSkills = true;
 		}
 	});
@@ -72,10 +72,10 @@ $('document').ready(function(){
 		$('.workExperience').toggle();
 		
 		if(colorWorkExperience == true) {
-			$(".colorChange_workexp").css("background", "rgba(255, 0, 255, 0.05)");
+			$(".colorChange_workexp").css("background", "rgba(255, 0, 255, 0.1)");
 			colorWorkExperience = false;
 		} else {
-			$(".colorChange_workexp").css("background", "rgba(0, 0, 255, 0.05)");
+			$(".colorChange_workexp").css("background", "rgba(0, 0, 255, 0.1)");
 			colorWorkExperience = true;
 		}
 	});
@@ -86,10 +86,10 @@ $('document').ready(function(){
 		$('.projects').toggle();
 		
 		if(colorProjects == true) {
-			$(".colorChange_proj").css("background", "rgba(255, 0, 255, 0.05)");
+			$(".colorChange_proj").css("background", "rgba(255, 0, 255, 0.1)");
 			colorProjects = false;
 		} else {
-			$(".colorChange_proj").css("background", "rgba(0, 0, 255, 0.05)");
+			$(".colorChange_proj").css("background", "rgba(0, 0, 255, 0.1)");
 			colorProjects = true;
 		}
 	});
@@ -100,10 +100,10 @@ $('document').ready(function(){
 		$('.coverLetter').toggle();
 		
 		if(colorCoverLetter == true) {
-			$(".colorChange_covlet").css("background", "rgba(255, 0, 255, 0.05)");
+			$(".colorChange_covlet").css("background", "rgba(255, 0, 255, 0.1)");
 			colorCoverLetter = false;
 		} else {
-			$(".colorChange_covlet").css("background", "rgba(0, 0, 255, 0.05)");
+			$(".colorChange_covlet").css("background", "rgba(255, 0, 0, 0.1)");
 			colorCoverLetter = true;
 		}
 	});
@@ -114,10 +114,10 @@ $('document').ready(function(){
 		$('.personalStatement').toggle();
 		
 		if(colorPersonalStatement == true) {
-			$(".colorChange_perstat").css("background", "rgba(255, 0, 255, 0.05)");
+			$(".colorChange_perstat").css("background", "rgba(255, 0, 255, 0.1)");
 			colorPersonalStatement = false;
 		} else {
-			$(".colorChange_perstat").css("background", "rgba(0, 0, 255, 0.05)");
+			$(".colorChange_perstat").css("background", "rgba(255, 0, 0, 0.1)");
 			colorPersonalStatement = true;
 		}
 	});

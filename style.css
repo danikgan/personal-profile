@@ -75,10 +75,10 @@ a:active { color: #00de00; text-decoration: underline; }
 .img-circle {
 	cursor: pointer;
 	
-	margin: 3% 3% 2% 5%;
+	margin: 25px 15px 0px 50px;
 	padding: 10px;
     border-radius: 150px;
-    height: 175px;
+    height: 150px;
     
     background: white;
     border: solid #1e627f;
@@ -202,9 +202,9 @@ a:active { color: #00de00; text-decoration: underline; }
 
 @media screen and (max-width: 550px) {
 	.img-circle {
-		margin: 0px 5% 20px 0px;
+		margin: 0px 5% 10px 0px;
 	    border-radius: 0px;
-	    height: 150px;
+	    height: 125px;
 	}
 	
 	.content {
@@ -219,10 +219,9 @@ a:active { color: #00de00; text-decoration: underline; }
 	.section {
 		font-size: 20px;
 		
-		width: 300px;
-		max-width: 80%;
-		line-height: 100px;
-	    height: 100px;
+		width: 90%;
+		line-height: 90px;
+	    height: 90px;
 		
 		background: white;
 	}
@@ -273,10 +272,9 @@ a:active { color: #00de00; text-decoration: underline; }
 	left: 0;
 	width: 15%;
 	
-	border-style: none solid none none;
+	border-style: none solid none solid;
 	border-color: #1e627f;
 	background-color: white;
-	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.5);
 	
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
@@ -299,51 +297,75 @@ a:active { color: #00de00; text-decoration: underline; }
 	cursor: pointer;
 	
 	width: 100%;
-	line-height: 50px;
-    height: 50px;
+	line-height: 60px;
+    height: 60px;
 	
-	background: rgba(0, 0, 255, 0.05);
+	background: rgba(0, 0, 255, 0.1);
     border-color: #1e627f;
     border-width: thin;
     border-style: solid none none none;
 }
-.section_large.colorChange_sum {background: rgba(0, 0, 255, 0.05);}
-.section_large.colorChange_edu {background: rgba(0, 0, 255, 0.05);}
-.section_large.colorChange_techskills {background: rgba(0, 0, 255, 0.05);}
-.section_large.colorChange_workexp {background: rgba(0, 0, 255, 0.05);}
-.section_large.colorChange_proj {background: rgba(0, 0, 255, 0.05);}
-.section_large.colorChange_covlet {background: rgba(0, 0, 255, 0.05);}
-.section_large.colorChange_perstat {background: rgba(0, 0, 255, 0.05);}
+.section_large.colorChange_sum {background: rgba(0, 255, 255, 0.1);}
+.section_large.colorChange_edu {background: rgba(0, 0, 255, 0.1);}
+.section_large.colorChange_techskills {background: rgba(0, 0, 255, 0.1);}
+.section_large.colorChange_workexp {background: rgba(0, 0, 255, 0.1);}
+.section_large.colorChange_proj {background: rgba(0, 0, 255, 0.1);}
+.section_large.colorChange_covlet {background: rgba(0, 0, 255, 0.1);}
+.section_large.colorChange_perstat {background: rgba(0, 0, 255, 0.1);}
 .section_large.name {
+	line-height: 50px;
+    height: 50px;
+	
 	text-align: left;
 	cursor: default;
 	
 	border-width: medium;
 	background: rgba(0, 255, 255, 0.05);
 }
-.section_large.download {background: rgba(255, 255, 0, 0.05);}
+.section_large.summaryColor {background: rgba(0, 255, 255, 0.1);}
+.section_large.additionalColor {background: rgba(255, 0, 0, 0.1);}
+.section_large.downloadColor {background: rgba(255, 255, 0, 0.1);}
+
+.section.summaryColor {background: rgba(0, 255, 255, 0.2);}
+.section.cvColor {background: rgba(0, 0, 255, 0.2);}
+.section.additionalColor {background: rgba(255, 0, 0, 0.2);}
+.section.downloadColor {background: rgba(255, 255, 0, 0.2);}
 
 /*----------------------------------- Content -----------------------------------*/
 .content_large {
 	z-index: 1;
 	
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-left: 16%;
-	padding: 4%;
+	padding: 2% 4% 2% 4%;
 	width: 75%;
 	
 	background-color: white;
 	border: solid #1e627f;
-	border-radius: 10px;
-	box-shadow: 5px 5px 15px rgba(122, 162, 168, 0.5);
+	border-radius: 5px;
+	box-shadow: 0px 5px 15px rgba(122, 162, 168, 0.75);
 }
 
 
 
 /*----------------------------------- Optimisations -----------------------------------*/
+@media screen and (min-height: 1000px) {
+	.section_large {
+		line-height: 75px;
+	    height: 75px;
+	}
+}
+
 @media screen and (min-width: 1600px) {
-	#profilePicture {width: 50%;}
-	#myName {font-size: 200%;}
+	#profilePicture {width: 60%;}
+	#myName {font-size: 175%;}
+	#menu_block {width: 9%;}
+	.content_large {
+		margin-top: 5px;
+		margin-left: 10%;
+		padding: 2% 4% 2% 4%;
+		width: 81%;
+	}
 }
 
 @media screen and (max-width: 1000px) {
