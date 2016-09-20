@@ -49,20 +49,6 @@ a:active { color: #00de00; text-decoration: underline; }
     animation-fill-mode: backwards;
     animation-iteration-count: 1;
 }
-#wait_large {
-	z-index: 10;
-	width: 10%;
-	position: relative;
-	display: block;
-	left: 45%;
-	background-color: white;
-	border-radius: 10px;
-	
-	animation-name: appearance_closeSection;
-    animation-duration: .1s;
-    animation-fill-mode: backwards;
-    animation-iteration-count: 1;
-}
 
 
 /*----------------------------------- Body Sections -----------------------------------*/
@@ -292,6 +278,21 @@ a:active { color: #00de00; text-decoration: underline; }
     border-style: solid none solid none;
 }
 
+#wait_large {
+	z-index: 10;
+	width: 4%;
+	position: relative;
+	display: block;
+	left: 48%;
+	background-color: white;
+	border-radius: 10px;
+	
+	animation-name: appearance_closeSection;
+    animation-duration: .1s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+}
+
 .section_large {
 	text-align: center;
 	cursor: pointer;
@@ -305,6 +306,7 @@ a:active { color: #00de00; text-decoration: underline; }
     border-width: thin;
     border-style: solid none none none;
 }
+.section_large.colorChange_perinfo {background: rgba(255, 0, 255, 0.1);}
 .section_large.colorChange_sum {background: rgba(0, 255, 255, 0.1);}
 .section_large.colorChange_edu {background: rgba(0, 0, 255, 0.1);}
 .section_large.colorChange_techskills {background: rgba(0, 0, 255, 0.1);}

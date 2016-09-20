@@ -24,6 +24,20 @@ $('document').ready(function(){
 	
 	
 	/*----------------------------------- Content for Larger Version (loaded externally) -----------------------------------*/
+	var colorPersonalInfo = true;
+	$( ".inside_perinfo" ).load( "content/perinfo.html");
+	$('.menPerInfo').click(function() {
+		$('.personalinfo').toggle();
+		
+		if(colorPersonalInfo == true) {
+			$(".colorChange_perinfo").css("background", "rgba(0, 255, 255, 0.1)");
+			colorPersonalInfo = false;
+		} else {
+			$(".colorChange_perinfo").css("background", "rgba(255, 0, 255, 0.1)");
+			colorPersonalInfo = true;
+		}
+	});
+	
 	var colorSummary = true;
 	$('.menSum').click(function() {
 		$( ".inside_sum" ).load( "content/summary.html");
