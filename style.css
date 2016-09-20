@@ -307,7 +307,7 @@ a:active { color: #00de00; text-decoration: underline; }
     border-style: solid none none none;
 }
 .section_large.colorChange_perinfo {background: rgba(255, 0, 255, 0.1);}
-.section_large.colorChange_sum {background: rgba(0, 255, 255, 0.1);}
+.section_large.colorChange_sum {background: rgba(255, 0, 255, 0.1);}
 .section_large.colorChange_edu {background: rgba(0, 0, 255, 0.1);}
 .section_large.colorChange_techskills {background: rgba(0, 0, 255, 0.1);}
 .section_large.colorChange_workexp {background: rgba(0, 0, 255, 0.1);}
@@ -324,7 +324,6 @@ a:active { color: #00de00; text-decoration: underline; }
 	border-width: medium;
 	background: rgba(0, 255, 255, 0.05);
 }
-.section_large.summaryColor {background: rgba(0, 255, 255, 0.1);}
 .section_large.additionalColor {background: rgba(255, 0, 0, 0.1);}
 .section_large.downloadColor {background: rgba(255, 255, 0, 0.1);}
 

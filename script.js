@@ -39,15 +39,15 @@ $('document').ready(function(){
 	});
 	
 	var colorSummary = true;
+	$( ".inside_sum" ).load( "content/summary.html");
 	$('.menSum').click(function() {
-		$( ".inside_sum" ).load( "content/summary.html");
 		$('.summary').toggle();
 		
 		if(colorSummary == true) {
-			$(".colorChange_sum").css("background", "rgba(255, 0, 255, 0.1)");
+			$(".colorChange_sum").css("background", "rgba(0, 255, 255, 0.1)");
 			colorSummary = false;
 		} else {
-			$(".colorChange_sum").css("background", "rgba(0, 255, 255, 0.1)");
+			$(".colorChange_sum").css("background", "rgba(255, 0, 255, 0.1)");
 			colorSummary = true;
 		}
 	});
