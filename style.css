@@ -280,10 +280,10 @@ a:active { color: #00de00; text-decoration: underline; }
 
 #wait_large {
 	z-index: 10;
-	width: 4%;
+	width: 6%;
 	position: relative;
 	display: block;
-	left: 48%;
+	left: 47%;
 	background-color: white;
 	border-radius: 10px;
 	
